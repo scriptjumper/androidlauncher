@@ -25,3 +25,5 @@
 - setting app icons using online icons
 - resetting previously changed icons
 - setting wallpaper as a solid color
+
+# V1
