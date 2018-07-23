@@ -2,76 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shaeen.launcher">
 
-    <uses-permission android:name="android.permission.SET_WALLPAPER" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.READ_CALL_LOG" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
-        android:excludeFromRecents="true"
-        android:fitsSystemWindows="true"
-        android:icon="@mipmap/icon_new"
-        android:label="@string/app_name"
-        android:orientation="vertical"
-        android:roundIcon="@mipmap/icon_new"
+        android:clearTaskOnLaunch="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Swipe Launcher"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="nosensor"
         android:stateNotNeeded="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.activity.LauncherActivity"
             android:clearTaskOnLaunch="true"
-            android:excludeFromRecents="true"
-            android:label="Launcher"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:enabled="true"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
+            android:resizeableActivity="true"
+            android:resumeWhilePausing="true"
+            android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
-            android:theme="@style/HomeTheme">
+            android:taskAffinity=""
+            android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MONKEY" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AppsListActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" />
-        <activity
-            android:name=".SettingsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".SelectAppsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ChangeIconsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".GetWebImageActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ResetIconsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ColorPickActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".FirstLaunchActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/HomeTheme"/>
+        <activity android:name=".ui.activity.IconPackChooserActivity" />
     </application>
 
 </manifest>
