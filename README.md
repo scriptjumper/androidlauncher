@@ -3,4 +3,6 @@
 
 ## Newer Features will be introduced
 
-# V2
+# V3 
+
+V3 will be the final design of this launcher
