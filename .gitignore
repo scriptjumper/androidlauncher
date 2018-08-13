@@ -1,4 +1,6 @@
+*.apk
 *.iml
+.idea
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -6,5 +8,35 @@
 .DS_Store
 /build
 /captures
-.externalNativeBuild
-.vscode/
+
+
+# Built application files
+/*/build/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
+.idea/tasks.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+
+# OS-specific files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.*~

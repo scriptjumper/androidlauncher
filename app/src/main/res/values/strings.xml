@@ -1,11 +1,47 @@
 <resources>
-    <string name="app_name">Paper Launcher</string>
-    <string name="wallpaper">Wallpaper</string>
-    <string name="edit_dock_icons">Edit dock icons</string>
-    <string name="apps">Apps</string>
-    <string name="all_icons">All icons</string>
-    <string name="icon_pack">Icon Pack</string>
-    <string name="default_icon_pack">Default</string>
-    <string name="icon_pack_applied">Icon Pack applied, select Paper Launcher to continue, please</string>
-    <string name="default_launcher">Set as default Launcher</string>
+    <string name="app_name" translatable="false">Rapid Launcher</string>
+
+    <string name="text_hold_to_change_widget">Hold to change widget</string>
+    <string name="text_empty_category_notice">This tab is currently empty. You can move apps between tabs by dragging them.</string>
+    <string name="text_cannot_name_empty">The tab must have a non-empty name</string>
+    <string name="text_cannot_remove_tab">Cannot remove this tab</string>
+    <string name="text_cannot_move_tab">Cannot move this tab</string>
+    <string name="text_remove">Remove</string>
+    <string name="text_uninstall">Uninstall</string>
+
+    <string name="tab_other">Other</string>
+    <string name="tab_phone">Phone</string>
+    <string name="tab_internet">Internet</string>
+    <string name="tab_games">Games</string>
+    <string name="tab_media">Media</string>
+    <string name="tab_accessories">Accessories</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="text_renaming_tab">Renaming «%s»</string>
+    <string name="text_rename">Rename</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_operation_cancelled">Operation cancelled</string>
+    <string name="text_app_drawer">App drawer</string>
+    <string name="text_home_screen">Home screen</string>
+    <string name="text_empty">Empty</string>
+    <string name="text_add_tab">Add tab</string>
+    <string name="text_new_tab_name">Enter new tab name</string>
+    <string name="text_move_tab">Move</string>
+    <string name="text_move_tab_toast">Please tap the tab to be swapped, or the same to cancel</string>
+    <string name="text_app_icon">Application icon</string>
+    <string name="text_settings_screen">Settings screen</string>
+    <string name="text_change_colors">Change colors</string>
+    <string name="text_widget">Widget</string>
+    <string name="text_wallpaper">Wallpaper</string>
+    <string name="text_font">Font</string>
+
+    <string name="setting_toggle_visibility">Toggle visibility</string>
+    <string name="setting_change_widget">Change widget</string>
+    <string name="setting_select_wallpaper">Select wallpaper</string>
+    <string name="setting_change_wallpaper">Change wallpaper</string>
+
+    <string name="hint_widget_now_visible">The widget is now visible.</string>
+    <string name="hint_widget_now_invisible">The widget has been hidden.</string>
+    <string name="add_to_home_screen">Add to home screen</string>
+    <string name="application_not_installed">The application is not installed</string>
 </resources>
