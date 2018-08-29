@@ -29,7 +29,7 @@ public class LauncherActivity extends FragmentActivity
 
     //region Fields
 
-    LauncherPagerAdapter mCollectionPagerAdapter;
+    com.launcher.rapidLaunch.launcher.LauncherPagerAdapter mCollectionPagerAdapter;
     ViewPager mViewPager;
 
     // Used for telling home screen when a shortcut is added.
@@ -52,7 +52,7 @@ public class LauncherActivity extends FragmentActivity
 
         // Create the pager
         mCollectionPagerAdapter =
-                new LauncherPagerAdapter(
+                new com.launcher.rapidLaunch.launcher.LauncherPagerAdapter(
                         getSupportFragmentManager(), this);
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mCollectionPagerAdapter);
@@ -61,10 +61,11 @@ public class LauncherActivity extends FragmentActivity
 
     //endregion
 
+
     //region First time setup
 
     private boolean createDefaultTabs() {
-        LauncherSQLiteHelper sql = new LauncherSQLiteHelper((App) getApplication());
+        LauncherSQLiteHelper sql = new LauncherSQLiteHelper((com.launcher.rapidLaunch.launcher.App) getApplication());
         if (sql.hasTabs())
             return false;
 
@@ -92,7 +93,7 @@ public class LauncherActivity extends FragmentActivity
     private void autoSortApplications() {
 
         // Set up both SQL helper and package manager
-        LauncherSQLiteHelper sql = new LauncherSQLiteHelper((App) getApplication());
+        LauncherSQLiteHelper sql = new LauncherSQLiteHelper((com.launcher.rapidLaunch.launcher.App) getApplication());
         PackageManager mPacMan = getApplicationContext().getPackageManager();
 
         // Set MAIN and LAUNCHER filters, so we only get activities with that defined on their manifest

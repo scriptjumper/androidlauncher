@@ -28,7 +28,7 @@ public class TabbedAppDrawerFragment extends Fragment {
     //region Fields
 
     private View rootView;
-    private TabFragmentHandler tabHandler;
+    private com.launcher.rapidLaunch.launcher.appdrawer.TabFragmentHandler tabHandler;
 
     // Are we swapping tabs? This will be consumed by the tab.onClick event
     private boolean isSwappingTabs;
@@ -44,7 +44,7 @@ public class TabbedAppDrawerFragment extends Fragment {
 
         rootView = inflater.inflate(R.layout.activity_app_drawer, container, false);
 
-        tabHandler = new TabFragmentHandler(getChildFragmentManager(), rootView, getActivity());
+        tabHandler = new com.launcher.rapidLaunch.launcher.appdrawer.TabFragmentHandler(getChildFragmentManager(), rootView, getActivity());
 
         addOnClickListener();
         setOnDragListener();
